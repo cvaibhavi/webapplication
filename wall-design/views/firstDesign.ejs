@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wall design Website</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body style="background-image:none; background: rgb(238,218,182);
+background: radial-gradient(circle, rgba(238,218,182,1) 10%, rgba(241,209,189,1) 50%);" >
+
+    <!--preloader-->
+    <div id = "preloader"></div>
+    <!-- Navbar selection -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">Wall Design</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                  <a href="/" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                  <a href="/about" class="navbar__links" id="about-page">About</a>
+                </li>
+                <li class="navbar__item">
+                  <a href="/sample" class="navbar__links" id="sample-page">Sample</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/contact" class="navbar__links" id="signup">Contact</a>
+                  </li>
+                  <li class="navbar__btn">
+                    <a href="/auth/logout" class="button" id="logout">Logout</a>
+                  </li>
+              </ul>
+        </div>
+    </nav>
+    <div class="sep_des">
+        <div class="moredtl">
+            <a href="/paintsample" class="anchor">View all design</a>
+            <a href="/secondDesign" class="anchor" style="float: right;">Next design</a>
+            <h1>First design</h1>
+            <p>This is my first design</p><br>
+            <p>Labour charge for this design is 20rs/square feet<br>
+                And required material for this design are:<br>
+                * Masking tape<br>* Two color paints<br>* Roller<br>* Paint brushes</p>
+        </div>
+        <div class="moresamp">
+            <img class="img-s2" src="/images/Des1-1.jpeg" alt="Design1">
+            <img class="img-s2" src="/images/4paint.jpeg" alt="paint4">
+            <video class="vid-s1" width="800px" height="500px" controls>
+                <source src="/videos/Wall-1.mp4" type="video/mp4"> 
+            </video>
+        </div><br>
+        <a href="/paintsample" class="anchor">Go Back</a>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

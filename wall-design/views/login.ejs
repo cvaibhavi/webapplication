@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wall design Website</title>
+    <link rel="stylesheet" href="/Styles.css" />
+  </head>
+  <body>
+    <%- include('./layout/flash-messages') %>
+    
+    
+
+    <div class="Login">
+      <h2>Login</h2>
+      <br />
+      <form action="/auth/login" method="POST">
+        <label for="email-ad"><b>Email Address:</b></label
+        ><br />
+        <input
+          type="text"
+          placeholder="Enter your Email Address"
+          name="email"
+          id="email-id"
+        /><br />
+        <label for="pwd"><b>Password:</b></label
+        ><br />
+        <input
+          type="password"
+          placeholder="Enter your password"
+          name="password"
+          id="pwd"
+        /><br />
+
+        <b><button type="submit">Login</button></b><br />
+      </form>
+      <h5 style="font-size: 16px">
+        If you don't have an account
+        <a href="/auth/register" class="sign-in" style="text-decoration: none"
+          >Create account</a
+        >
+      </h5>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

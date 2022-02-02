@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wall design Website</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body style="background-image:none; background: rgb(238,218,182);
+background: radial-gradient(circle, rgba(238,218,182,1) 10%, rgba(241,209,189,1) 50%);" >
+
+    <!--preloader-->
+    <div id = "preloader"></div>
+    <!-- Navbar selection -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">Wall Design</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                  <a href="/" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                  <a href="/about" class="navbar__links" id="about-page">About</a>
+                </li>
+                <li class="navbar__item">
+                  <a href="/sample" class="navbar__links" id="sample-page">Sample</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/contact" class="navbar__links" id="signup">Contact</a>
+                  </li>
+                  <li class="navbar__btn">
+                    <a href="/auth/logout" class="button" id="logout">Logout</a>
+                  </li>
+              </ul>
+        </div>
+    </nav>
+    <div class="Hangings">
+        <h1>Wall Hangings</h1>   
+        
+        <div>
+            <h2>Toogu deepa</h2>
+            <img class="img-h1" src="/images/h-3.jpg" alt="hang-3">
+        </div>
+        
+        <div>
+            <h2>Pista flower</h2>
+            <img class="img-h1" src="/images/h-2.jpg" alt="hang-2">
+        </div>
+
+        <div>
+            <h2>Paper flower</h2>
+            <img class="img-h1" src="/images/h-1.jpg" alt="hang-1">
+        </div>
+            
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

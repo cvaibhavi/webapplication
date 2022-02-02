@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wall design Website</title>
+    <link rel="stylesheet" href="/Styles.css" />
+  </head>
+  <body>
+    <%- include('./layout/flash-messages') %>
+
+
+    <div class="Login">
+      <h2>Register Now</h2>
+      <br />
+      <form action="/auth/register" method="POST" id="reg-form">
+        <label for="uname"><b>Name:</b></label
+        ><br />
+        <input
+          type="text"
+          placeholder="Enter your Name"
+          name="name"
+          id="uname"
+        /><br />
+        <label for="email-ad"><b>Email Address:</b></label
+        ><br />
+        <input
+          type="email"
+          placeholder="Enter your Email Address"
+          name="email"
+          id="email-id"
+        /><br />
+        <label for="pwd"><b>Password:</b></label
+        ><br />
+        <input
+          type="password"
+          placeholder="Enter your password"
+          name="password"
+          id="pwd"
+        /><br />
+
+        <b><button type="submit">Register</button></b><br />
+        <h5 style="font-size: 16px">
+          If you already have an account ...
+          <a href="/auth/login" class="sign-in" style="text-decoration: none"
+            >Sign-in</a
+          >
+        </h5>
+      </form>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
